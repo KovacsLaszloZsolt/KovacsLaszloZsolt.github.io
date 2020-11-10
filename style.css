@@ -1,0 +1,165 @@
+html {
+    font-family: Courier, 'Courier New', monospace; 
+    font-weight: 500;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(assets/topography.png);
+    background-repeat: repeat;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.nav-btn a, .section-intro h2, h3, h4 {
+    color: #ff0099;
+}
+
+/*----------------
+--- NAVIGATION ---
+-----------------*/
+
+.nav-bar {
+    background-color: #333333;
+    width: 100%;
+    top: 0px;
+    height: 3rem;
+    position: fixed;
+}
+
+.nav-menu {
+    float: right;
+    padding-right: 8rem;
+}
+
+.nav-btn {
+    list-style: none;
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.nav-btn:last-child {
+    padding-right: 0rem;
+}
+
+.nav-btn a:hover {
+    color: #fff;
+}
+
+.logo {
+    height: 2rem;
+    width: auto;
+    float: left;
+    padding: 0.5rem 0 0 10rem;
+}
+
+/*----------------
+----- HEADINGS ----
+-----------------*/
+h1 {
+    padding: 6rem 0 0 0;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+h2, h3 {
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 700;
+}
+
+/*----------------
+------ MAIN ------
+-----------------*/
+
+main {
+    padding: 0px 10% 5rem 10%;
+}
+.section-intro {
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.line {
+    display: block;
+    width: 4rem;
+    border-bottom: 4px dashed black;
+    text-align: center;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+.section-def h2 {
+    text-align: center;
+    padding-top: 2.3rem;
+    padding-bottom: 1em;
+}
+
+.section-def h3 {
+    padding-top: 1em;
+    margin-left: 10px;
+}
+
+/*----------------
+--- FOOTER ---
+-----------------*/
+
+footer {
+    background-color: #333333;
+    width: 100%;
+    bottom: 0px;
+    height: 3rem;
+    position: fixed;
+}
+
+footer h4 {
+    font-size: 0.9rem;
+    padding-right: 2.5rem;
+    padding-top: 1px;
+    float: right;
+}
+
+@media screen and (max-width: 678px) {
+    main {
+        max-width: 90%;
+    }
+    .nav-bar {
+        height: 6rem;
+        position: absolute;
+    }
+    
+    .nav-menu {
+        float: none;
+        padding: 0px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .logo {
+        padding: 10px 0;
+        margin: 0 50%;
+        
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+    
+    footer {
+        position: relative;
+    }
+  }
